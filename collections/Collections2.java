@@ -5,7 +5,6 @@ import java.util.Deque;
 import java.util.PriorityQueue;
 import java.util.LinkedList;
 import java.util.ArrayList;
-import java.util.ArrayDeque;
 
 public class Collections2 {
     public static void main(String[] args) {
@@ -57,8 +56,8 @@ public class Collections2 {
 
     public static String[] defaultSArray() {
         // to print use:  Arrays.toString(defaultSArray())
-        String[] arr = {"kek", "w"};
-        String[][] arr2 = {{"kek", "w"}, {"one", "two"}};
+        //String[] arr = {"kek", "w"};
+        //String[][] arr2 = {{"kek", "w"}, {"one", "two"}};
         return new String[] {"wee", "rough"};
     }
 }
