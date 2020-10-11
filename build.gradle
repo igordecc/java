@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.oracle.database.jdbc:ojdbc10:19.7.0.0'
+}
+
+jar {
+    baseName = "jdbc-connection"
+    version = '0.1.0'
+}
