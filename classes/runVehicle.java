@@ -2,6 +2,8 @@
 Application class
 Compile and boot to run hardcoded vehicle.
 */
+//TODO: 1 - one file one class
+//TODO: 2 - remove Car, move all Cars' things to vehicle
 public class runVehicle {
     public static void main(String[] args){
         System.out.println("hello");
