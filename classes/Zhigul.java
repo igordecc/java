@@ -1,20 +1,16 @@
-package classes;
+package classes; // <- package declaration
 
+// final class with inheritence from abstract
 public final class Zhigul extends Car {
-    /**
-     * Create car object
-     * @param engine car engine, most important
-     * @param condition car condition - ok, acceptable or not working
-     * @param cost money cost, including money type
-     * @param brand brand of the car
-     * @param status on or off
-     */
+
+    // fields
     public String engine;
     public String condition;
     public String cost;
     public String brand;
     public String status;
 
+    // constructor
     public Zhigul(
         String engine, 
         String condition, 
@@ -28,13 +24,17 @@ public final class Zhigul extends Car {
         status = status;
     }
 
+    // getter
     public final String getStatus() {
         return status;
     }
-
-    public final void setStatus(String status) {
+    
+    // setter
+    public final void setStatus(String status) {    
         status = status;
     }
+
+    // bunch of methods
 
     protected final void start() {
         System.out.println("вививививививививививививививививи");
