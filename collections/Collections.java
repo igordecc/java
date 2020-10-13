@@ -1,3 +1,5 @@
+package collections;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,8 +23,8 @@ public class Collections {
         System.out.println(listTwo);
 
         System.out.println("// `for Each` and method references");
-        list.forEach(System.out::println);
-        listTwo.forEach(System.out::println);
+        // TODO: figure this out: list.forEach(System.out::println);
+        // listTwo.forEach(System.out::println);
 
         System.out.println("// `for` loop");
         for (String string : list) {
@@ -41,12 +43,12 @@ public class Collections {
         List<Integer> l1 = createList();
         System.out.println(l1);
         l1.sort(null);
-        l1.forEach(System.out::println);
+        // l1.forEach(System.out::println);
 
         System.out.println("// sorting with lambda expression");  
         List<String> l2 = createStringList();
         l2.sort((s1,s2) -> s1.compareToIgnoreCase(s2));
-        l2.forEach(System.out::println);
+        // l2.forEach(System.out::println);
     }
 
     private static List<Integer> createList() {
