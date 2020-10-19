@@ -30,7 +30,7 @@ public class App {
         settings.put("hibernate.format_sql", "true");
 
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                .applySettings(settings).build();
+                .configure().build();
 
         MetadataSources metadataSources = new MetadataSources(serviceRegistry);
         // metadataSources.addAnnotatedClass(Player.class);
@@ -44,18 +44,25 @@ public class App {
 
     public static void main(String[] args) {
         Session session = getCurrentSession();
-//        session.beginTransaction();
+        session.beginTransaction();
         EntityManager em = session.getEntityManagerFactory().createEntityManager();
-//        List result = em.createQuery("SELECT g FROM Gonorus g").getResultList();
+        session.getTransaction().commit();
+        addGonorus(em);
+        listGonorus(em);
+        session.close();
+    }
 
-//        for ( Gonorus event : (List<Gonorus>) result ) {
-//            System.out.println( "Event (" + event. getId()+ ") : " + event.getName() );
-//        }
-        Gonorus g = new Gonorus(3, "Sed");
+    public static void addGonorus(EntityManager em){
+        Gonorus g = new Gonorus(4, "Bid");
         em.getTransaction().begin();
         em.persist(g);
         em.getTransaction().commit();
-//        session.getTransaction().commit();
-        session.close();
+    }
+
+    public static void listGonorus(EntityManager em) {
+        List result = em.createQuery("FROM Gonorus").getResultList();
+        for ( Gonorus event : (List<Gonorus>) result ) {
+            System.out.println( "Event (" + event. getId()+ ") : " + event.getName() );
+        }
     }
 }

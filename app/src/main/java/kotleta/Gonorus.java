@@ -6,12 +6,19 @@ import javax.persistence.*;
 @Table(name="Gonorus")
 public class Gonorus {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column( name = "id" )
     private int id;
 
     @Column( name = "name")
     private String name;
+
+    public Gonorus(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    private Gonorus() {
+    }
 
     public int getId() {
         return id;
@@ -29,8 +36,5 @@ public class Gonorus {
         this.name = name;
     }
 
-    public Gonorus(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+
 }
