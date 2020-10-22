@@ -46,9 +46,13 @@ public class App {
         Session session = getCurrentSession();
         session.beginTransaction();
         EntityManager em = session.getEntityManagerFactory().createEntityManager();
-        session.getTransaction().commit();
-        addGonorus(em);
+//        session.getTransaction().commit();
+
+        //addGonorus(em);
+        removeGonorusQuery(em);
         listGonorus(em);
+
+
         session.close();
     }
 
@@ -64,5 +68,21 @@ public class App {
         for ( Gonorus event : (List<Gonorus>) result ) {
             System.out.println( "Event (" + event. getId()+ ") : " + event.getName() );
         }
+    }
+
+    public static void removeGonorus(EntityManager em) {
+        // cant remove plural lines
+        Gonorus g = new Gonorus(4, "Bid");
+        em.getTransaction().begin();
+        em.remove(g);
+        em.getTransaction().commit();
+    }
+
+    public static void removeGonorusQuery(EntityManager em) {
+        em.getTransaction().begin();
+        int  entityNum = em.createQuery("DELETE FROM Gonorus WHERE id=4").executeUpdate();
+        em.getTransaction().commit();
+        System.out.println(entityNum);
+
     }
 }
