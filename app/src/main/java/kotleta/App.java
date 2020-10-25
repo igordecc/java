@@ -14,6 +14,7 @@ import javax.persistence.EntityManager;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map;
 
 public class App {
 
@@ -33,7 +34,12 @@ public class App {
                 .configure().build();
 
         MetadataSources metadataSources = new MetadataSources(serviceRegistry);
-        // metadataSources.addAnnotatedClass(Player.class);
+
+        metadataSources.addAnnotatedClass(Gonorus.class);
+        metadataSources.addAnnotatedClass(TournamentWinners.class);
+        metadataSources.addAnnotatedClass(DatesOfBirth.class);
+
+
         Metadata metadata = metadataSources.buildMetadata();
 
         // here we build the SessionFactory (Hibernate 5.4)
@@ -50,7 +56,9 @@ public class App {
 
         //addGonorus(em);
         removeGonorusQuery(em);
-        listGonorus(em);
+        listTableName(em, "Gonorus");
+        listTableName(em, "TournamentWinners");
+        listTableName(em, "DatesOfBirth");
 
 
         session.close();
@@ -63,12 +71,13 @@ public class App {
         em.getTransaction().commit();
     }
 
-    public static void listGonorus(EntityManager em) {
-        List result = em.createQuery("FROM Gonorus").getResultList();
+    public static void listTableName(EntityManager em, String tableName) {
+        List result = em.createQuery("FROM " + tableName).getResultList();
         for ( Gonorus event : (List<Gonorus>) result ) {
             System.out.println( "Event (" + event. getId()+ ") : " + event.getName() );
         }
     }
+
 
     public static void removeGonorus(EntityManager em) {
         // cant remove plural lines

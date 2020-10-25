@@ -16,5 +16,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <mapping class="kotleta.Gonorus"/>
+        <mapping class="kotleta.TournamentWinners"/>
+        <mapping class="kotleta.DatesOfBirth"/>
     </session-factory>
 </hibernate-configuration>

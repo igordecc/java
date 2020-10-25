@@ -3,14 +3,35 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="64d8065b-9e3a-4933-a63c-080d6cfc4dab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/kotleta/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kotleta/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kotleta/TournamentWinners.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kotleta/TournamentWinners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/java/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/test.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +42,29 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,9 +91,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.34401506" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle app:build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kotleta.App" />
       <module name="java.app.main" />
@@ -63,8 +116,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testAppHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;java.AppTest.testAppHasAGreeting&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="java [app:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="app:build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
+        <item itemvalue="Gradle.java [app:build]" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -80,26 +173,66 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1803" height="188" key="GridCell.Tab.0.bottom" timestamp="1603357685410">
+    <state x="441" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603373872381">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="188" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603357685410" />
-    <state width="1803" height="188" key="GridCell.Tab.0.center" timestamp="1603357685410">
+    <state x="441" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603373872381" />
+    <state width="1803" height="281" key="GridCell.Tab.0.bottom" timestamp="1603374647042">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="188" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603357685410" />
-    <state width="1803" height="188" key="GridCell.Tab.0.left" timestamp="1603357685394">
+    <state width="1803" height="281" key="GridCell.Tab.0.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374647042" />
+    <state width="1803" height="281" key="GridCell.Tab.0.center" timestamp="1603374647042">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="188" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603357685394" />
-    <state width="1803" height="188" key="GridCell.Tab.0.right" timestamp="1603357685410">
+    <state width="1803" height="281" key="GridCell.Tab.0.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374647042" />
+    <state width="1803" height="281" key="GridCell.Tab.0.left" timestamp="1603374647042">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1803" height="188" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603357685410" />
-    <state x="570" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1603353332269">
+    <state width="1803" height="281" key="GridCell.Tab.0.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374647042" />
+    <state width="1803" height="281" key="GridCell.Tab.0.right" timestamp="1603374647042">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="570" y="45" width="840" height="1034" key="search.everywhere.popup/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603353332269" />
+    <state width="1803" height="281" key="GridCell.Tab.0.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374647042" />
+    <state width="1803" height="346" key="GridCell.Tab.1.bottom" timestamp="1603374597997">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1803" height="346" key="GridCell.Tab.1.bottom/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374597997" />
+    <state width="1803" height="346" key="GridCell.Tab.1.center" timestamp="1603374597997">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1803" height="346" key="GridCell.Tab.1.center/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374597997" />
+    <state width="1803" height="346" key="GridCell.Tab.1.left" timestamp="1603374597997">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1803" height="346" key="GridCell.Tab.1.left/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374597997" />
+    <state width="1803" height="346" key="GridCell.Tab.1.right" timestamp="1603374597997">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1803" height="346" key="GridCell.Tab.1.right/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603374597997" />
+    <state x="343" y="10" key="SettingsEditor" timestamp="1603477796568">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="343" y="10" key="SettingsEditor/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603477796568" />
+    <state x="563" y="247" width="840" height="1034" key="run.anything.popup" timestamp="1603473996675">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="563" y="247" width="840" height="1034" key="run.anything.popup/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603473996675" />
+    <state x="570" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1603477776123">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="570" y="45" width="840" height="1034" key="search.everywhere.popup/1982.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1603477776123" />
   </component>
 </project>
